@@ -40,9 +40,9 @@ Light Theme - Red - Graphs
 | Feature                  | Usertyle | custom.css  |
 |--------------------------|:--------:|:-----------:|
 | Custom Colors            | ✔️       | ❌          |
-| Live Changes             | ✔       | ❌          |
-| Any Browser/Device [1]  | ❌       | ✔          | 
-| Multi Router/Domain [2] | ✔       | ❌          | 
+| Live Changes             | ✔️       | ❌          |
+| Any Browser/Device [1]  | ❌       | ✔️          | 
+| Multi Router/Domain [2] | ✔️       | ❌          | 
 
 [1]: Available on the installed browser  
 [2]: custom.css needs to be manually installed on every router
