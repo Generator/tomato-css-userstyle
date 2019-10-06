@@ -44,5 +44,5 @@ Light Theme - Red - Graphs
 | Any Browser/Device ^[1]  | ❌       | ✔          | 
 | Multi Router/Domain ^[2] | ✔       | ❌          | 
 
-[1]: Available on the installed browser
+[1]: Available on the installed browser  
 [2]: custom.css needs to be manually installed on every router
