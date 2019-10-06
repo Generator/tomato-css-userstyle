@@ -7,8 +7,8 @@
 ==/UserStyle== 
 @preprocessor uso
 
-@advanced text RouterDomain1 "Primary Router Address" 127.0.0.1
-@advanced text RouterDomain2 "Secondary Router Address (Optional)" 127.0.1.1
+@advanced text RouterDomain1 "Primary Router Address" freshtomato
+@advanced text RouterDomain2 "Secondary Router Address (Optional)" 127.0.0.1
 @advanced dropdown tomato-accent-color "Accent Color" {
 red "Tomato" <<<EOT 
 #ea3201; EOT;

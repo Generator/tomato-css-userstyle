@@ -18,7 +18,7 @@ Tampermonkey (![Chrome](https://chrome.google.com/webstore/detail/tampermonkey/d
 
 ## Installation
 
-[![Install directly with Stylus](https://img.shields.io/badge/Install%20directly%20with-Stylus-00adad.svg)](https://raw.githubusercontent.com/Generator/tomato-css-userstyle/userstyle/tomato.user.css)
+[![Install directly with Stylus](https://img.shields.io/badge/Install%20directly%20with-Stylus-00adad.svg)](https://raw.githubusercontent.com/Generator/tomato-css-userstyle/userstyle/tomato.user.css)  
 Open Stylus manager, click on cog icon to customize it ![Screenshot](screenshots/settings.png)
 
 ## Screenshots
