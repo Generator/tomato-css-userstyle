@@ -45,6 +45,19 @@ custom "Custom Background Color" <<<EOT
 }
 
 @var color custom-background-color "Custom Background Color" #fff
+
+@advanced dropdown tomato-font-color "Font Color" {
+default "Dark grey" <<<EOT 
+#76838f; EOT;
+white "White" <<<EOT 
+#fff; EOT;
+red "Red" <<<EOT
+#c11818; EOT;
+custom "Custom Font Color" <<<EOT 
+/*[[custom-font-color]]*\/; EOT;
+}
+
+@var color custom-font-color "Custom Font Color" #76838f
 ==/UserStyle== */
 
 @import url('https://fonts.googleapis.com/css?family=Play:400'); 
@@ -56,7 +69,8 @@ custom "Custom Background Color" <<<EOT
 /*  --tomato-panel-background: #3f3f3f; */
   --tomato-panel-background: /*[[tomato-background-color]]*/;
   --tomato-container-background: #f0f1f4;  
-  --tomato-color: #76838f;
+/* --tomato-color: #c11818; */
+  --tomato-color: /*[[tomato-font-color]]*/; 
   --tomato-accent-color: /*[[tomato-accent-color]]*/;
 /*  --tomato-accent-color: #ea3201; */
 /*  --tomato-accent-color: #27ae60; */
