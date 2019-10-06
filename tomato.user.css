@@ -1,10 +1,14 @@
 /* ==UserStyle==
-@name           Advanced Tomato CSS
-@namespace      github.com/openstyles/stylus
+@name           Tomato CSS Userstyle
+@namespace      https://github.com/Generator
 @version        1.0.0
-@description    A new userstyle
-@author         American_Jesus
-==/UserStyle== 
+@description    Custom CSS for Routers running Tomato Firmware
+@author         Generator [(https://github.com/Generator)]
+@author         tsg2k2 [(https://github.com/tsg2k2)]
+@author         brandonongzy [(https://github.com/brandonongzy)]
+@homepageURL    https://github.com/Generator/tomato-css-userstyle/
+@updateURL      https://raw.githubusercontent.com/Generator/tomato-css-userstyle/userstyle/tomato.user.css
+
 @preprocessor uso
 
 @advanced text RouterDomain1 "Primary Router Address" freshtomato
