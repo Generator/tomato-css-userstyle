@@ -19,7 +19,7 @@ Tampermonkey (![Chrome](https://chrome.google.com/webstore/detail/tampermonkey/d
 ## Installation
 
 [![Install directly with Stylus](https://img.shields.io/badge/Install%20directly%20with-Stylus-00adad.svg)](https://raw.githubusercontent.com/Generator/tomato-css-userstyle/userstyle/tomato.user.css)  
-Open Stylus manager, click on cog icon to customize it ![Screenshot](screenshots/settings.png)
+Open ![Stylus manager](https://github.com/openstyles/stylus/#releases), click on cog icon to customize it ![Screenshot](screenshots/settings.png)
 
 ## Screenshots
 
@@ -34,3 +34,15 @@ Light Theme - Blue - Basic
 Light Theme - Red - Graphs
 
 ![Screenshot](screenshots/light-traffic-red.png)
+
+## Differences between Usertyle and custom.css
+
+| Feature                  | Usertyle | custom.css  |
+|--------------------------|:--------:|:-----------:|
+| Custom Colors            | ✔️       | ❌          |
+| Live Changes             | ✔       | ❌          |
+| Any Browser/Device ^[1]  | ❌       | ✔          | 
+| Multi Router/Domain ^[2] | ✔       | ❌          | 
+
+[1]: Available on the installed browser
+[2]: custom.css needs to be manually installed on every router
