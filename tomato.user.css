@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Tomato CSS Userstyle
 @namespace      https://github.com/Generator
-@version        1.0.0
+@version        1.0.1
 @description    Custom CSS for Routers running Tomato Firmware
 @author         Generator [(https://github.com/Generator)]
 @author         tsg2k2 [(https://github.com/tsg2k2)]
@@ -13,6 +13,8 @@
 
 @advanced text RouterDomain1 "Primary Router Address" freshtomato
 @advanced text RouterDomain2 "Secondary Router Address (Optional)" 192.168.0.1
+
+
 @advanced dropdown tomato-accent-color "Accent Color" {
 red "Tomato" <<<EOT 
 #ea3201; EOT;
@@ -33,7 +35,6 @@ grey "Light" <<<EOT
 custom "Custom Background Color" <<<EOT 
 /*[[custom-panel-color]]*\/; EOT;
 }
-
 @var color custom-panel-color "Custom Left Panel Color" #2b323a
 
 
@@ -47,21 +48,43 @@ dark "Dark" <<<EOT
 custom "Custom Background Color" <<<EOT 
 /*[[custom-background-color]]*\/; EOT;
 }
-
 @var color custom-background-color "Custom Background Color" #fff
+
 
 @advanced dropdown tomato-font-color "Font Color" {
 default "Dark grey" <<<EOT 
 #76838f; EOT;
 white "White" <<<EOT 
 #fff; EOT;
-red "Red" <<<EOT
-#c11818; EOT;
+red "Tomato (Red)" <<<EOT
+#ea3201; EOT;
+blue "Blue" <<<EOT 
+#2180de; EOT;
+green "Green" <<<EOT 
+#27ae60; EOT;
 custom "Custom Font Color" <<<EOT 
 /*[[custom-font-color]]*\/; EOT;
 }
-
 @var color custom-font-color "Custom Font Color" #76838f
+
+
+@advanced dropdown tomato-active-font-color "Font Active Color" {
+default "White" <<<EOT 
+#fff; EOT;
+white "Dark Grey" <<<EOT 
+#76838f; EOT;
+red "Tomato (Red)" <<<EOT
+#ea3201; EOT;
+blue "Blue" <<<EOT 
+#2180de; EOT;
+green "Green" <<<EOT 
+#27ae60; EOT;
+custom "Custom Font Color" <<<EOT 
+/*[[custom-active-font-color]]*\/; EOT;
+}
+@var color custom-active-font-color "Custom Active Font Color" #fff
+
+
 ==/UserStyle== */
 
 @import url('https://fonts.googleapis.com/css?family=Play:400'); 
@@ -75,6 +98,7 @@ custom "Custom Font Color" <<<EOT
   --tomato-container-background: #f0f1f4;  
 /* --tomato-color: #c11818; */
   --tomato-color: /*[[tomato-font-color]]*/; 
+  --tomato-active-color: /*[[tomato-active-font-color]]*/; 
   --tomato-accent-color: /*[[tomato-accent-color]]*/;
 /*  --tomato-accent-color: #ea3201; */
 /*  --tomato-accent-color: #27ae60; */
@@ -951,12 +975,12 @@ td#navi a {
 
 td#navi a:hover {
     background-color: rgba(255,255,255,0.05) !important;
-    color: white;
+    color: var(--tomato-active-color);
     transition: background-color 0.5s, color 0.5s;
 }
 
 td#navi a.indent1:hover:before {
-    background-color: white;
+    background-color: var(--tomato-active-color);
     transition: background-color 0.5s;
 }
 
@@ -970,7 +994,7 @@ td#navi a.indent1 {
 }
 
 td#navi a.indent1.active {
-    color: white;
+    color: var(--tomato-active-color);
     font-weight: bolder;
 }
 
@@ -986,7 +1010,7 @@ td#navi a.indent1.active[href*='bwlimit'],
 td#navi a.indent1.active[href*='restrict']
 {
     /*! background-color: var(--tomato-accent-color); */
-    color: white;
+    color: var(--tomato-active-color);
 }
 
 td#navi a.indent2.active:after,
@@ -1010,7 +1034,7 @@ td#navi a.indent1::before {
 }
 
 td#navi a.active.indent1::before {
-   background-color: white;
+   background-color: var(--tomato-active-color);
 }
 
 td#navi a.indent1[href*=about] {
