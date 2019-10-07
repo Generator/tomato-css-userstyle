@@ -1,8 +1,8 @@
 ## Tomato-css Userstyle
 
 
-Is a fork from [tsg2k2's custom css](https://github.com/tsg2k2/tomato-css) ported to userstyle.  
-Tomato-css Userstyle shares the same code of [tsg2k2's custom css](https://github.com/tsg2k2/tomato-css) with the option for customization using [Stylus browser extension](https://github.com/openstyles/stylus/#releases)  
+Is a fork from [tsg2k2's custom css][custom-css] ported to userstyle.  
+Tomato-css Userstyle shares the same code of [tsg2k2's custom css][custom-css] with the option for customization using [Stylus browser extension][stylus]  
 ![Screenshot](screenshots/options.png)
 
 It's an attempt to re-implement AdvancedTomato's look and feel on vanilla Tomato firmware (i.e. css only). Includes 
@@ -15,12 +15,17 @@ It's an attempt to re-implement AdvancedTomato's look and feel on vanilla Tomato
 * css-only animation for spinners
 * parametrized to make different accent color easy to apply, etc. 
 
-
+[custom-css]: https://github.com/tsg2k2/tomato-css
 
 ## Installation
 
-[![Install directly with Stylus](https://img.shields.io/badge/Install%20directly%20with-Stylus-00adad.svg)](https://raw.githubusercontent.com/Generator/tomato-css-userstyle/userstyle/tomato.user.css)  
-Open ![Stylus manager](https://github.com/openstyles/stylus/#releases), click on cog icon to customize it ![Screenshot](screenshots/settings.png)
+[![Install directly with Stylus][badge]][style]  
+Open ![Stylus manager][stylus], click on cog icon to customize it ![Screenshot](screenshots/settings.png)
+
+[badge]: https://img.shields.io/badge/Install%20directly%20with-Stylus-116b59.svg?longCache=true&style=for-the-badge
+[style]: https://raw.githubusercontent.com/Generator/tomato-css-userstyle/userstyle/tomato.user.css
+
+[stylus]:https://github.com/openstyles/stylus/#releases
 
 ### Dynamic Graphs
 Tampermonkey (![Chrome](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo?hl=en), ![Firefox](https://addons.mozilla.org/en-US/firefox/addon/tampermonkey/)) scripts provided:
