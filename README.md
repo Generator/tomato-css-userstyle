@@ -1,4 +1,9 @@
-This is a fork from [tsg2k2's custom css](https://github.com/tsg2k2/tomato-css) ported to userstyle.
+## Tomato-css Userstyle
+
+
+Is a fork from [tsg2k2's custom css](https://github.com/tsg2k2/tomato-css) ported to userstyle.  
+Tomato-css Userstyle shares the same code of [tsg2k2's custom css](https://github.com/tsg2k2/tomato-css) with the option for customization using [Stylus browser extension](https://github.com/openstyles/stylus/#releases)  
+![Screenshot](screenshots/options.png)
 
 It's an attempt to re-implement AdvancedTomato's look and feel on vanilla Tomato firmware (i.e. css only). Includes 
 * uniform panel-based UI
@@ -11,15 +16,29 @@ It's an attempt to re-implement AdvancedTomato's look and feel on vanilla Tomato
 * parametrized to make different accent color easy to apply, etc. 
 
 
-Tampermonkey (![Chrome](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo?hl=en), ![Firefox](https://addons.mozilla.org/en-US/firefox/addon/tampermonkey/)) scripts provided:
- * ![script](https://github.com/tsg2k2/tomato-css/raw/master/release/FreshTomatoGraphResizer.user.js) to make graphs dynamically resizable.  
- * [script](https://github.com/tsg2k2/tomato-css/raw/master/release/FreshTomatoProgressBarEnabler.user.js) to add dynamically updated graphs on the overview page. Note that only https://192.168.1.1/ or http://freshtomato/ are enabled by default
-
 
 ## Installation
 
 [![Install directly with Stylus](https://img.shields.io/badge/Install%20directly%20with-Stylus-00adad.svg)](https://raw.githubusercontent.com/Generator/tomato-css-userstyle/userstyle/tomato.user.css)  
 Open ![Stylus manager](https://github.com/openstyles/stylus/#releases), click on cog icon to customize it ![Screenshot](screenshots/settings.png)
+
+### Dynamic Graphs
+Tampermonkey (![Chrome](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo?hl=en), ![Firefox](https://addons.mozilla.org/en-US/firefox/addon/tampermonkey/)) scripts provided:
+ * ![script](https://github.com/tsg2k2/tomato-css/raw/master/release/FreshTomatoGraphResizer.user.js) to make graphs dynamically resizable.  
+ * [script](https://github.com/tsg2k2/tomato-css/raw/master/release/FreshTomatoProgressBarEnabler.user.js) to add dynamically updated graphs on the overview page. Note that only https://192.168.1.1/ or http://freshtomato/ are enabled by default
+
+
+## Differences between Usertyle and custom.css
+
+| Feature                  | Usertyle | custom.css  |
+|--------------------------|:--------:|:-----------:|
+| Custom Colors            | ✔️       | ❌          |
+| Live Changes             | ✔️       | ❌          |
+| Any Browser/Device [1]  | ❌       | ✔️          | 
+| Multi Router/Domain [2] | ✔️       | ❌          | 
+
+[1]: Only available on installed browser  
+[2]: custom.css needs to be manually installed on every router
 
 ## Screenshots
 
@@ -34,15 +53,3 @@ Light Theme - Blue - Basic
 Light Theme - Red - Graphs
 
 ![Screenshot](screenshots/light-traffic-red.png)
-
-## Differences between Usertyle and custom.css
-
-| Feature                  | Usertyle | custom.css  |
-|--------------------------|:--------:|:-----------:|
-| Custom Colors            | ✔️       | ❌          |
-| Live Changes             | ✔️       | ❌          |
-| Any Browser/Device [1]  | ❌       | ✔️          | 
-| Multi Router/Domain [2] | ✔️       | ❌          | 
-
-[1]: Available on the installed browser  
-[2]: custom.css needs to be manually installed on every router
