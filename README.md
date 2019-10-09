@@ -62,7 +62,7 @@ Tampermonkey (![Chrome](https://chrome.google.com/webstore/detail/tampermonkey/d
  * [script](https://github.com/tsg2k2/tomato-css/raw/master/release/FreshTomatoProgressBarEnabler.user.js) to add dynamically updated graphs on the overview page. Note that only https://192.168.1.1/ or http://freshtomato/ are enabled by default
 
 ## Usage
-Open **Stylus manager**, click on cog icon to customize it ![Screenshot](screenshots/settings.png)
+Open **Stylus manager**, click on cog icon to customize it ![Screenshot](images/screenshots/settings.png)
 
 ![Screenshot](images/screenshots/options.png)
 
