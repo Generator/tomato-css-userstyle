@@ -1,9 +1,28 @@
-## Tomato-css Userstyle
+<br />
+<p align="center">
+  <a href="https://github.com/Generator/tomato-css-userstyle">
+    <img src="images/logo.png" alt="Logo" width="80" height="80">
+  </a>
+
+  <h3 align="center">Tomato-css Userstyle</h3>
+</p>
+
+## Table of Contents
+
+* [Description](#description)
+* [Getting Started](#getting-started)
+  * [Prerequisites](#prerequisites)
+  * [Installation](#installation)
+  * [Dynamic Graphs](#dynamic-graphs)
+* [Usage](#usage)  
+* [Differences between Usertyle and custom.css](#differences-between-usertyle-and-customcss)
+* [Screenshots](#screenshots)
 
 
-Is a fork from [tsg2k2's custom css][custom-css] ported to userstyle.  
+
+## Description
+**Tomato-css Userstyle** is a fork from [tsg2k2's custom css][custom-css] ported to userstyle.  
 Tomato-css Userstyle shares the same code of [tsg2k2's custom css][custom-css] with the option for customization using [Stylus browser extension][stylus]  
-![Screenshot](screenshots/options.png)
 
 It's an attempt to re-implement AdvancedTomato's look and feel on vanilla Tomato firmware (i.e. css only). Includes 
 * uniform panel-based UI
@@ -17,10 +36,20 @@ It's an attempt to re-implement AdvancedTomato's look and feel on vanilla Tomato
 
 [custom-css]: https://github.com/tsg2k2/tomato-css
 
-## Installation
+## Getting Started
+
+### Prerequisites
+* Stylus
+  * [![Firefox][StylusFirefoxBadge]](https://addons.mozilla.org/firefox/addon/styl-us/)
+  * [![Google Chrome][StylusChromeBadge]](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne)
+  
+ [StylusFirefoxBadge]: https://img.shields.io/amo/v/styl-us?color=orange&label=Firefox%20add-on
+ [StylusChromeBadge]: https://img.shields.io/chrome-web-store/v/clngdbkpkpeebahjckkjfobafhncgmne
+
+### Installation
 
 [![Install directly with Stylus][badge]][style]  
-Open ![Stylus manager][stylus], click on cog icon to customize it ![Screenshot](screenshots/settings.png)
+
 
 [badge]: https://img.shields.io/badge/Install%20directly%20with-Stylus-116b59.svg?longCache=true&style=for-the-badge
 [style]: https://raw.githubusercontent.com/Generator/tomato-css-userstyle/userstyle/tomato.user.css
@@ -32,6 +61,10 @@ Tampermonkey (![Chrome](https://chrome.google.com/webstore/detail/tampermonkey/d
  * ![script](https://github.com/tsg2k2/tomato-css/raw/master/release/FreshTomatoGraphResizer.user.js) to make graphs dynamically resizable.  
  * [script](https://github.com/tsg2k2/tomato-css/raw/master/release/FreshTomatoProgressBarEnabler.user.js) to add dynamically updated graphs on the overview page. Note that only https://192.168.1.1/ or http://freshtomato/ are enabled by default
 
+## Usage
+Open **Stylus manager**, click on cog icon to customize it ![Screenshot](screenshots/settings.png)
+
+![Screenshot](images/screenshots/options.png)
 
 ## Differences between Usertyle and custom.css
 
@@ -49,12 +82,12 @@ Tampermonkey (![Chrome](https://chrome.google.com/webstore/detail/tampermonkey/d
 
 Light Theme - Default - Overview
 
-![Screenshot](screenshots/light.png)
+![Screenshot](images/screenshots/light.png)
 
 Light Theme - Blue - Basic
 
-![Screenshot](screenshots/light-basic-blue.png)
+![Screenshot](images/screenshots/light-basic-blue.png)
 
 Light Theme - Red - Graphs
 
-![Screenshot](screenshots/light-traffic-red.png)
+![Screenshot](images/screenshots/light-traffic-red.png)
