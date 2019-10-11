@@ -92,18 +92,11 @@ custom "Custom Font Color" <<<EOT
 
 :root {
   --tomato-background: /*[[tomato-panel-color]]*/;
-/*  --tomato-panel-background: #fbfbfb; */
-/*  --tomato-panel-background: #3f3f3f; */
   --tomato-panel-background: /*[[tomato-background-color]]*/;
-  --tomato-container-background: #f0f1f4;  
-/* --tomato-color: #c11818; */
+  --tomato-container-background: #f0f1f4;
   --tomato-color: /*[[tomato-font-color]]*/; 
   --tomato-active-color: /*[[tomato-active-font-color]]*/; 
   --tomato-accent-color: /*[[tomato-accent-color]]*/;
-/*  --tomato-accent-color: #ea3201; */
-/*  --tomato-accent-color: #27ae60; */
-/* --tomato-accent-color: #2180de; */
-/*  --tomato-accent-color-dark: #2b323a; */ 
   --tomato-accent-color-dark: /*[[tomato-panel-color]]*/;
   --tomato-controls-border: 0.7px solid var(--tomato-container-background);
 
@@ -365,7 +358,8 @@ table#container td#header div.version {
     /*! padding-bottom: 20px; */
 }
 
-td#content > *:last-child {
+td#content > *:last-child,
+td#content > *:last-child > div.section{
     margin-bottom: 0px;
 }
 
@@ -448,7 +442,7 @@ table.tomato-grid {
     margin: 0;
     margin-bottom: 10px;
     background: unset;
-    padding: 10px;
+    padding: 20px;
     border-collapse: collapse;
 }
 
@@ -518,9 +512,9 @@ table.tomato-grid tr td {
     font-size: inherit !important;
 }
 
-/*table.tomato-grid tr td small {
-    display: block; 
-}*/
+/* table.tomato-grid tr td small {
+    display: block;
+} */
 
 table.tomato-grid tr td small a {
     display: inline-block;
@@ -1509,6 +1503,8 @@ td.term,
 textarea.as-script{
     background-color: var(--tomato-background);
     color: white;
+    margin-bottom: 20px !important;
+    padding: 5px !important;
 }
 
 select:hover, input:hover, textarea:hover,
@@ -1722,39 +1718,41 @@ input[id*='_f_nr']:first-child {
     margin-right: 10px;
 }
 
-/* 
-td#content {
-    column-width: 800px;
+ 
+td#content.tiles {
+    column-width: 700px;
     display: block;
-    column-count: 2; 
+    column-count: 3; 
     column-gap: 20px; 
-    column-fill: auto;
-}
-td#content > div {
-    min-width: 760px;
-}
-    
-
-td#content > div.section-title {
-    break-after: avoid !important;
-    break-inside: avoid;
-    -webkit-column-break-after: avoid;
 }
 
-td#content > div.section-title:after {
+td#content.tiles > div {
+    min-width: 660px;
+}    
+
+/* this is a hack*/
+td#content.tiles > div.section-title:after {
     content: " ";
     display: block;
     height: 200px;
     margin-bottom: -200px;
 }
 
-td#content > div.section {
-    break-before:avoid !important;
+/* those are not supported by browsers */
+td#content > div.section-title {
+    break-after: avoid;
     break-inside: avoid;
-    -webkit-column-break-before: avoid;
+    -webkit-column-break-after: avoid;
+    column-break-after: avoid;
 }
 
-*/
+td#content > div.tile,
+td#content > div.section {
+    break-before:avoid;
+    break-inside: avoid;
+    -webkit-column-break-before: avoid;
+    column-break-before: avoid;
+}
 
 #bwm-controls
 {
@@ -1916,8 +1914,8 @@ tr[id^='last-'] small {
     padding-right: 10px;
 }
 
-div#sesdiv_wan + div.section-title:before,
-div#att1 + div.section-title:before,
+div#sesdiv_lan-tile > div.section-title:before, div#sesdiv_wan + div.section-title:before,
+div#sesdiv_system-tile > div.section-title:before, div#att1 + div.section-title:before,
 #ports > div.section-title:before,
 div.section-title[id^='wl']:before,
 div#wan-title:before {
@@ -1951,28 +1949,30 @@ div.section-title[id^='wl']:before {
     -webkit-mask-image: var(--icon-signal);
 }
 
+div#sesdiv_system-tile > div.section-title:before, 
 div#att1 + div.section-title:before {
     mask-image: var(--icon-system);
     -webkit-mask-image: var(--icon-system);
 }
 
+div#sesdiv_lan-tile > div.section-title:before,
 div#sesdiv_wan + div.section-title:before {
     mask-image: var(--icon-lan);
     -webkit-mask-image: var(--icon-lan);
 }
 
 div#ident {
-    font: 20px sans-serif;
     position: absolute;
     display: block;
     top: 0;
-    left: 50%;
+    left: inherit;
     height: 60px;
     vertical-align: middle;
     line-height: 60px;
     color: white;
     opacity: 0.5;
     padding-left: 20px;
+    text-align: left;
 }
 
 div#graph embed {
